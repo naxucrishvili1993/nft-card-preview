@@ -1,0 +1,118 @@
+* {
+  font-family: "Outfit", sans-serif;
+}
+/* General Tags */
+body {
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+p {
+  font-size: 18px;
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+}
+h1 {
+  color: white;
+  font-size: 22px;
+}
+h1:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+  font-weight: 600;
+}
+hr {
+  color: hsl(215, 32%, 27%);
+  border-style: solid;
+  margin: 20px 0;
+}
+/* Image Section */
+.container {
+  background-color: hsl(216, 50%, 16%);
+  width: 280px;
+  padding: 1.5rem;
+  border-radius: 20px;
+}
+.equilibrium-img {
+  width: 280px;
+  border-radius: 10px;
+}
+.eye-icon {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, -170%);
+  display: none;
+}
+.aqua {
+  width: 280px;
+  height: 280px;
+  background-color: hsl(178, 100%, 50%);
+  position: absolute;
+  z-index: -1;
+  opacity: 0.5;
+  border-radius: 10px;
+}
+.image:hover .eye-icon {
+  display: block;
+  z-index: 5;
+}
+.image:hover .aqua {
+  z-index: 1;
+  cursor: pointer;
+}
+/* Stats Section */
+.stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.logo {
+  height: 20px;
+  margin-right: 5px;
+}
+.eth-p {
+  color: hsl(178, 100%, 50%);
+}
+/* Footer Section */
+
+.footer {
+  display: flex;
+  flex-direction: row;
+}
+.stats div,
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+}
+.stats p,
+.footer p {
+  font-size: 16px;
+  margin: 0;
+}
+.footer-img {
+  height: 33px;
+  border: 1px solid white;
+  border-radius: 100%;
+  margin-right: 15px;
+}
+.jules {
+  color: white;
+}
+.jules:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
